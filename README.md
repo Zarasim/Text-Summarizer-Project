@@ -1,25 +1,24 @@
 # Text-Summarizer-Project
 
-## Workflows
+This repository contains an end-to-end text summarization project utilizing a transformer model from HuggingFace. The project includes Docker containerization for easy deployment and is designed to be deployed on AWS infrastructure. A web interface powered by FastAPI enables users to interact with the summarization model, accessible from an AWS EC2 instance.
+Overview
 
-1. Update config.yaml
-2. Update params.yaml
-3. Update entity
-4. Update the configuration manager in src config
-5. update the conponents
-6. update the pipeline
-7. update the main.py
-8. update the app.py
+Text summarization is a critical task in natural language processing (NLP) that involves condensing large amounts of text into shorter summaries while preserving the key information. This project aims to provide a solution for text summarization using transformer-based models, leveraging the capabilities offered by HuggingFace's transformers library.
+Features
+
+-	Transformer-based Summarization: Utilizes state-of-the-art transformer models for text summarization tasks.
+-	Docker Containerization: Enables easy deployment and reproducibility of the summarization system using Docker containers.
+-	AWS Deployment: Designed for deployment on AWS infrastructure, leveraging services like EC2 for hosting the summarization application.
+-	Web Interface with FastAPI: Provides a user-friendly web interface powered by FastAPI for interacting with the summarization model.
+-	End-to-End Solution: Offers a complete pipeline from data ingestion to model deployment, simplifying the deployment process for users.
 
 
 # How to run?
+
 ### STEPS:
 
 Clone the repository
 
-```bash
-https://github.com/entbappy/End-to-end-Text-Summarization
-```
 ### STEP 01- Create a conda environment after opening the repository
 
 ```bash
@@ -29,7 +28,6 @@ conda create -n summary python=3.8 -y
 ```bash
 conda activate summary
 ```
-
 
 ### STEP 02- install the requirements
 ```bash
@@ -54,8 +52,6 @@ Data Scientist
 Email: krishnaik06@gmail.com
 
 ```
-
-
 
 # AWS-CICD-Deployment-with-Github-Actions
 
@@ -125,6 +121,6 @@ Email: krishnaik06@gmail.com
 
     AWS_REGION = us-east-1
 
-    AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
+    AWS_ECR_LOGIN_URI = 
 
     ECR_REPOSITORY_NAME = simple-app
