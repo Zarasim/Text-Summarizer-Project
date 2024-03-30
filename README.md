@@ -1,4 +1,4 @@
-# End to end Text-Summarizer-Project
+# Text-Summarizer-Project
 
 ## Workflows
 
@@ -85,7 +85,6 @@ Email: krishnaik06@gmail.com
 	#Policy:
 
 	1. AmazonEC2ContainerRegistryFullAccess
-
 	2. AmazonEC2FullAccess
 
 	
