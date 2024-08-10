@@ -20,6 +20,7 @@ parts/
 sdist/
 var/
 notebooks
+artifacts
 wheels/
 share/python-wheels/
 *.egg-info/
