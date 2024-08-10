@@ -4,7 +4,11 @@ from textSummarizer.pipeline.stage_03_data_transformation import DataTransformat
 from textSummarizer.pipeline.stage_04_model_trainer import ModelTrainerTrainingPipeline
 from textSummarizer.pipeline.stage_05_model_evaluation import ModelEvaluationTrainingPipeline
 from textSummarizer.logging import logger
+import torch
 
+device = "cuda" if torch.cuda.is_available() else "cpu"
+logger.info(f">>>>>> Device used: {device} <<<<<<") 
+   
 
 STAGE_NAME = "Data Ingestion stage"
 try:

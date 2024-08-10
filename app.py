@@ -7,7 +7,6 @@ from starlette.responses import RedirectResponse
 from fastapi.responses import Response
 from textSummarizer.pipeline.prediction import PredictionPipeline
 
-
 text:str = "What is Text Summarization?"
 
 app = FastAPI()
@@ -22,12 +21,11 @@ async def index():
 async def training():
     try:
         os.system("python main.py")
-        return Response("Training successful !!")
+        return Response("Training successful !")
 
     except Exception as e:
         return Response(f"Error Occurred! {e}")
     
-
 
 
 @app.post("/predict")
